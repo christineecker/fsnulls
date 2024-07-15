@@ -32,3 +32,9 @@ Document package
 ```shell
 devtools::document()
 ```
+
+# 15.07.2024
+
+```shell
+datalad run --explicit -m 'run test script' -i './inst/extdata/**' -o './output/PET_surrogates/*' 'Rscript scripts/create_surrogates_for_PET_maps.R'  
+```

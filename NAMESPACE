@@ -2,4 +2,5 @@
 
 export(fs_create_surrogates)
 export(fs_plot)
+export(get_SUBJECTS_DIR)
 export(split_fs_overlay)
