@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GIFTI Version="1.0" NumberOfDataArrays="1">
+  <MetaData>
+    <MD>
+      <Name>Generator</Name>
+      <Value>fsbrain</Value>
+    </MD>
+  </MetaData>
+  <DataArray Dimensionality="1" Dim0="40962" Encoding="GZipBase64Binary" DataType="NIFTI_TYPE_INT32" Intent="NIFTI_INTENT_LABEL" Endian="LittleEndian" ExternalFileName="" ExternalFileOffset="" ArrayIndexingOrder="RowMajorOrder">
+    <MetaData/>
+    <Data>eJzt2ttu3CAQANDd///pPrRSI8f2AgueAc6RkBLVsQFzGcZ9vZ7z/ldKrhtZh973K21XtPfrd3171vt4rxn6pMQq7ejlOI7u+ufnOJuhH6/qWNPmVWVsv/eSx9m7qHk3K72/2vau1HbGqonhVlkbW9YT6u3Wp9/sV0BZ3PdtbNi7fqyl9zvONH7Zl3G2n5FrjrFUp7SP7A98cjUmWseIMSU+A8r0ylNEri3H51nXqHUWd5zFIz2e82meZJhTMJOaObLKnLpbI2ZuF7GyxHUwq8xnKPN6D73fce24Nabgt6v5aL5AmZa9aEScEx3LES8ivjK2gJZ14en1w1pFjV65M/skAECckTFdVNnZsf2l/aUfAZ7Vsl6XrNGZ1+8e+/tV+8UQAOyg5x5mT3yGGIRoxtt8nGUA1tXzO9hqe8UKbYDsss2x3dc9gE+sd0Ams8dtx2dkqhu0GD1GZ5vjACtpWV/fX/ztE+wLzOyJPLY5AgAAOUWcB7KWqz7hWu25T58CkMHZftQrhri6V2mdzq6NjEtaYqfW+o6M7wDYQ+veO/OeYS9kBOMKvpPlPFNz7mUtvd+xczj0YY5Auyx7UZZ68LzI+MqYAlrWh+g9Eu70yp3ZLwEA4oyM6aLKzo79oB8B5tBrjc68fo/c68UQAMBuSuKaUfGNWIsRxPJAjU958Gwy1olceubNss8HAIBVjYzposrO9CPAPHZbo6PjgxX7FAAgQk1cJSYDAMgpOhcnl/dfafv0LcAeVlujo2OG0r1v1v4FAADqZMmrjX7uCufJHuRFAYgSnfPMVgAAAAAAAAC+Ef3NU1FeJ79/crzu7J6wghHz7Zvnnl33uvg3AAAAYD8t+Yjo/GRNne9yJL3zMxnMVt8njBxvGXKBtaLn6qj3YewDAADMq2c+ZqU8T2Yj8x7AmkbnTAGIk+E7UUYrtAFmkG2O7bbWAeymZI22jgPMabdcxqrtghVkmGM7rYcAkNmoPXalvXqFNgBlnszdOOMAAAAAlInOx+xc2MM348N4AgBYx13cFn3mEFdeiz4nlrwXZ1sAAAB+mumc54zKTkaNUfkegHXtuHav1h6o4ZsfAADAPKLPcLMUnuVdAsDa7PF9RcfK4nEAAOBpziUAAMBI0d9FIr/H7Hz+eV/8fHf9+/CzsyoAjGeP/Cs6dhTjAAAAwF/Zzs6frnmibs78Y8itAMC6or/NrFQAAAAAAAAAAKBU9P91UZRs5c7V9aX3/HR/4LMRc75k/tfUBwAAAAAY7y5H33Kvs7+L/mbR8g2jVxtGKs3Z1tSn5vsNfbWOvbPr7+4fMa+u6tND9HoSVY5t/9kfAAAAM/sDoJYNpA==</Data>
+  </DataArray>
+  <LabelTable>
+    <Label Key="0" Index="0"><![CDATA[negative]]></Label>
+    <Label Key="1" Index="1"><![CDATA[positive]]></Label>
+  </LabelTable>
+</GIFTI>

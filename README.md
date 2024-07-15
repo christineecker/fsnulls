@@ -6,7 +6,7 @@
 
 The goal of fsnulls is to ...
 
-## Package creation
+## Package creation and maintenance
 
 ```r
 usethis::create_package("~/Dropbox/myRpackages/fsnulls")
@@ -21,12 +21,14 @@ datalad create -c text2git -d . --force
 ```
 Note. `-c text2git` does not move .txt files to annex
 
+Initial commit:
 
+```shell
+datalad save -m "package structure created"
+```
 
-## Installation
+Document package
 
-You can install the development version of fsnulls like so:
-
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```shell
+devtools::document()
 ```
