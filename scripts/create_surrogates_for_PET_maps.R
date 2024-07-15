@@ -1,4 +1,6 @@
 
+write.dir <- "./output/PET_surrogates/"
+dir.create(write.dir)
 
 ##| 5HTR2A --------------------------------------------------------
 ##|
@@ -16,8 +18,6 @@ sa.5HT2A <- fs_create_surrogates(
   kernel = "gaussian"
 )
 #fs_plot(sa[sample(1:10,1),], "both")
-write.dir <- "./output/5HT2A_Variograms/"
-dir.create(write.dir)
 save(sa.5HT2A, file = paste0(write.dir, "lh.rh.5HT2A.knn10000.sa1000.rda"))
 
 
@@ -37,8 +37,6 @@ sa.5HT4 <- fs_create_surrogates(
   kernel = "gaussian"
 )
 #fs_plot(sa[sample(1:10,1),], "both")
-write.dir <- "./output/5HT4_Variograms/"
-dir.create(write.dir)
 save(sa.5HT4, file = paste0(write.dir, "lh.rh.5HT4.knn20000.sa1000.rda"))
 
 
@@ -58,9 +56,7 @@ sa.BZ <- fs_create_surrogates(
   kernel = "gaussian"
 )
 #fs_plot(sa[sample(1:10,1),], "both")
-write.dir <- "./output/BZ_Variograms/"
-dir.create(write.dir)
-save(sa.5HT2A, file = paste0(write.dir, "lh.rh.BZ.knn20000.sa1000.rda"))
+save(sa.BZ, file = paste0(write.dir, "lh.rh.BZ.knn20000.sa1000.rda"))
 
 
 ##| 5HTR1A --------------------------------------------------------
@@ -79,6 +75,4 @@ sa.5HT1A <- fs_create_surrogates(
   kernel = "gaussian"
 )
 #fs_plot(sa[sample(1:10,1),], "both")
-write.dir <- "./output/5HT1A_Variograms/"
-dir.create(write.dir)
-save(sa.5HT2A, file = paste0(write.dir, "lh.rh.5HT1A.knn30000.sa1000.rda"))
+save(sa.sa.5HT1A, file = paste0(write.dir, "lh.rh.5HT1A.knn30000.sa1000.rda"))
