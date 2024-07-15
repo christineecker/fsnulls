@@ -1,4 +1,6 @@
 .Rproj.user
 .DS_Store
-man/
 NAMESPACE
+man/
+
+
