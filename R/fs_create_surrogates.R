@@ -28,7 +28,7 @@ fs_create_surrogates <- function(fs.overlay,
 
   # directory for files required by BrainSMASH (e.g. distmat_lh.npy & index_lh.npy)
   #brainsmash.dir <- "./inst/extdata/BrainSMASH/"
-  brainsmash.dir <- system.file("inst/extdata/BrainSMASH/", package = "fsnulls")
+  brainsmash.dir <- system.file("extdata/BrainSMASH/", package = "fsnulls")
 
   # directory for storing FreeSurfer overlay file
   tmp.data.dir <- tempdir()
@@ -36,8 +36,8 @@ fs_create_surrogates <- function(fs.overlay,
 
   ## source python script ------------------------------------------
 
-  python.dir <- system.file("inst/python/", package = "fsnulls")
-  py.script <- paste0(python.dir, "create_surrogates_py.py")
+  python.dir <- system.file("python/", package = "fsnulls")
+  py.script <- paste0(python.dir, "/create_surrogates_py.py")
   reticulate::source_python(py.script)
 
   ##| Create surrogates ------------------------------------------
@@ -128,9 +128,9 @@ fs_create_surrogates <- function(fs.overlay,
 
 # fs.overlay <- c(fsdata::pet.5HT$`5HT1A`$lh)
 # fs.overlay[fsdata::fsavg6$medial.wall.verts$lh] <- NA
-# sa <- fs_create_surrogates_both_hemispheres(fs.overlay,
-#                                             "lh",
-#                                             c(1000L),
-#                                             10L,
-#                                             n.cores = 10L,
-#                                             kernel = "gaussian")
+# sa <- fs_create_surrogates(fs.overlay,
+#                            "lh",
+#                            c(1000L),
+#                            10L,
+#                            n.cores = 10L,
+#                            kernel = "gaussian")

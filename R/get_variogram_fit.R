@@ -38,12 +38,12 @@ get_variogram_fit <-
 
     # directory for files required by BrainSMASH (e.g. distmat_lh.npy & index_lh.npy)
     #brainsmash.dir <- "./inst/extdata/BrainSMASH/"
-    brainsmash.dir <- system.file("inst/extdata/BrainSMASH/", package = "fsnulls")
+    brainsmash.dir <- system.file("extdata/BrainSMASH/", package = "fsnulls")
 
     ## Source python script ------------------------------------------
 
-    python.dir <- system.file("inst/python/", package = "fsnulls")
-    py.script <- paste0(python.dir, "get_variogram_fit_py.py")
+    python.dir <- system.file("python/", package = "fsnulls")
+    py.script <- paste0(python.dir, "/get_variogram_fit_py.py")
     reticulate::source_python(py.script)
 
     ## Write overlay to file ------------------------------------------
