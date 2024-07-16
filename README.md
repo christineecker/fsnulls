@@ -29,8 +29,17 @@ datalad save -m "package structure created"
 
 Document package
 
-```shell
+```r
 devtools::document()
+```
+
+## Installation
+
+The package relies on `python` and the python toolboxes `BrainSMASH` and `neuromaps`. These need to be installed prior to the `fsnulls` package. Also, you have to initiate python in R using the `reticulate` package, and based on your python installation path, e.g.,
+
+```r
+python.path <- "/opt/anaconda3/bin/python"
+reticulate::use_python(python.path)
 ```
 
 # 15.07.2024
