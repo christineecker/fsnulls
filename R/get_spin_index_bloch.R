@@ -10,17 +10,17 @@
 #'
 #' @export
 #'
-#' @return RETURN_DESCRIPTION
+#' @return Returns n.spins x n.verts matrix of spin indices for both hemispheres
 #' @examples
 #' # ADD_EXAMPLES_HERE
 get_spin_index_bloch <- function(data = "None",
                                  atlas = "fsaverage",
                                  density = "41k",
-                                 n_perm = 10L)
+                                 n.spins = 10L)
 {
   nulls <- import("neuromaps.nulls")
-  spins <- nulls$alexander_bloch(data = cat(data), atlas = atlas, density = density, n_perm = n_perm)
+  spins <- nulls$alexander_bloch(data = cat(data), atlas = atlas, density = density, n_perm = n.spins)
   spins <- spins + 1 # Note. add 1 as python index starts with zero
 
-  return(spins)
+  return(t(spins))
 }
