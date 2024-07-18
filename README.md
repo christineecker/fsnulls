@@ -27,10 +27,11 @@ Initial commit:
 datalad save -m "package structure created"
 ```
 
-Document package
+Document package and load functions:
 
 ```r
 devtools::document()
+devtools::load_all()
 ```
 
 ## Installation
@@ -42,8 +43,18 @@ python.path <- "/opt/anaconda3/bin/python"
 reticulate::use_python(python.path)
 ```
 
-# 15.07.2024
+## Notes
+
+## 17.07.2024
+
+- it is not necessary to unlock files prior to installing the package. This is taken care of by `datalad`
+
+## 15.07.2024
 
 ```shell
-datalad run --explicit -m 'run test script' -i './inst/extdata/**' -o './output/PET_surrogates/*' 'Rscript scripts/create_surrogates_for_PET_maps.R'  
+datalad run --explicit \
+-m 'run test script' \
+-i './inst/extdata/**' \
+-o './output/PET_surrogates/*' \
+'Rscript scripts/create_surrogates_for_PET_maps.R'  
 ```
