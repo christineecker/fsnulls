@@ -7,3 +7,4 @@ NAMESPACE
 .gitignore
 README.md
 
+inst/doc
