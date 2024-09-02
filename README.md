@@ -29,3 +29,22 @@ or
 python.path <- "/opt/anaconda3/bin/python"
 reticulate::use_python(python.path)
 ```
+
+## Downloading the repository
+
+Given the large amount of metadata that is contained within the package, it uses `git annex` to store the data on a remove repository other than github. You therefore also need to install (datalad)[https://www.datalad.org], which can be used to clone the repository and to download the data. 
+
+To clone the repository, use
+
+```{bash}
+datalad clone https://github.com/christineecker/fsnulls.git
+```
+
+To download the data, use
+
+```{bash}
+datalad get data/
+datalad get inst/extdata
+# etc.
+```
+
